@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+Antique:wght@300&display=swap');
+
+
 :root {
     --main-font: sans-serif;
     --font-size: 16px;
@@ -24,6 +27,7 @@ html {
 body {
     margin : 0;
     overflow-x: hidden;
+    animation: fadeIn 1s ease;
 }
 
 img{
@@ -130,4 +134,9 @@ button:hover{
     font-weight: bolder;
     color: var(--secondary-color);
     background-color: var(--main-modal-color);
+}
+
+@keyframe fadeIn{
+    0% {opacity:0}
+    100% {opacity:1}
 }
